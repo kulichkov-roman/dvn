@@ -11,7 +11,7 @@ $this->setFrameMode(true);?>
             "CACHE_TIME" => $arParams["CACHE_TIME"],
             "CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
             "COUNT_ELEMENTS" => $arParams["SECTIONS_COUNT_ELEMENTS"],
-            "TOP_DEPTH" => $arParams["SECTIONs_TOP_DEPTH"],
+            "TOP_DEPTH" => $arParams["SECTIONS_TOP_DEPTH"],
             "SECTION_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["section"],
             "SHOW_PARENT_NAME" => $arParams["SECTIONS_SHOW_PARENT_NAME"],
             "ADD_SECTIONS_CHAIN" => (isset($arParams["ADD_SECTIONS_CHAIN"]) ? $arParams["ADD_SECTIONS_CHAIN"] : ''),

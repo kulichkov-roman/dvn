@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"История", 
+		"/about/history/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Награды", 
+		"/about/awards/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Сертификаты", 
+		"/about/certificates/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Пресса о нас", 
+		"/about/press-about-us/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Сотрудники",
+		"/about/staff/",
+		Array(),
+		Array(),
+		""
+	)
+);
+?>

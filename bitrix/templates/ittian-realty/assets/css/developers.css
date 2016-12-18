@@ -1,0 +1,10 @@
+.b-wrap .top {
+    font-size: 14px;
+}
+.b-wrap .bot {
+    font-size: 18px;
+}
+
+.t-nav>li>a,  .t-nav>div>li>a {
+    font-size: 16px;
+}

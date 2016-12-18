@@ -79,6 +79,8 @@ $arItem = $arResult;
             <?=number_format($arItem['PROPERTIES']['PRICE']['VALUE'],0,'.', ' ')?>
             <?=GetMessage('CURRENCY')?>
         </div>
+        <?} else {?>
+            <strong>Точную стоимость уточняйте по телефону 310-1-310</strong>
         <?}?>
         <a href="<?=SITE_DIR?>favorite/" class="otl otl-elem" data-id="<?=$arResult['ID']?>" data-gold="<?=htmlspecialcharsbx(GetMessage('CE_FAVORITE_DONE'))?>" data-to_gold="<?=htmlspecialcharsbx(GetMessage('CE_FAVORITE_ADD'))?>"><span></span><t><?=GetMessage('CE_FAVORITE_ADD')?></t></a>
         <br>
@@ -189,7 +191,6 @@ $arItem = $arResult;
     <div class="new-big-thumbs">
         <a class="nw-inf active" data-item="data1"><span><?=GetMessage('CE_TAB_1')?></span></a>
         <a class="nw-cred" data-item="data3"><span><?=GetMessage('CE_TAB_2')?></span></a>
-        <a class="nw-map " onclick="displayMap()" data-item="data2"><span><?=GetMessage('CE_TAB_3')?></span></a>
     </div>
     <div class="new-big-body">
         <div class="new-data active" id="data1">

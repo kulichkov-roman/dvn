@@ -1,0 +1,60 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"О компании",
+		"/about/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Новости",
+		"/news/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Услуги",
+		"/services/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Вопрос-ответ",
+		"/question-answer/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Отзывы",
+		"/review/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Контакты",
+		"/contacts/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Фотогалерея",
+		"/photogallery/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"О микрорайоне",
+		"/o-mikrorayone/",
+		Array(),
+		Array(),
+		""
+	)
+);
+?>
