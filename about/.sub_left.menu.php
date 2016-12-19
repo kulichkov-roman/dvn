@@ -8,7 +8,7 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Награды", 
+		"Завершенные проекты застройщика", 
 		"/about/awards/", 
 		Array(), 
 		Array(), 
@@ -22,18 +22,11 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Пресса о нас", 
-		"/about/press-about-us/", 
+		"Сотрудники", 
+		"/about/staff/", 
 		Array(), 
 		Array(), 
 		"" 
-	),
-	Array(
-		"Сотрудники",
-		"/about/staff/",
-		Array(),
-		Array(),
-		""
 	)
 );
 ?>
