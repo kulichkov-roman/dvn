@@ -75,10 +75,11 @@ $arItem = $arResult;
     </div>
     <div class="right-card">
         <?if($arItem['PROPERTIES']['PRICE']['VALUE']){?>
-        <div class="price">
-            <?=number_format($arItem['PROPERTIES']['PRICE']['VALUE'],0,'.', ' ')?>
-            <?=GetMessage('CURRENCY')?>
-        </div>
+            <div class="price">
+                <span class="element-price__min">от</span> 
+                <?=number_format($arItem['PROPERTIES']['PRICE']['VALUE'],0,'.', ' ')?>
+                <?=GetMessage('CURRENCY')?>
+            </div>
         <?} else {?>
             <strong>Точную стоимость уточняйте по телефону 310-1-310</strong>
         <?}?>
