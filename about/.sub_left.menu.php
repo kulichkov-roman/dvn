@@ -1,25 +1,11 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"История", 
-		"/about/history/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Завершенные проекты застройщика", 
-		"/about/awards/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Сертификаты", 
-		"/about/certificates/", 
-		Array(), 
-		Array(), 
-		"" 
+		"Завершенные проекты застройщика",
+		"/about/awards/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
 		"Сотрудники", 

@@ -164,7 +164,6 @@ if($favicon_file != ''){
                 </div>
                 <div class="mid-b col-sm-6">
                     <?$APPLICATION->IncludeFile(SITE_DIR."include/header_contacts_data.php", Array(), Array("MODE"=>"text","SHOW_BORDER"=>false));?>
-
                 </div>
                 <div class="top-btn col-sm-3">
                     <a href="<?=SITE_DIR?>request/" class="button"><?$APPLICATION->IncludeFile(SITE_DIR."include/request_btn.php", Array(), Array("MODE"=>"text"));?></a>
