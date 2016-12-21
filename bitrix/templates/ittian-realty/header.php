@@ -49,6 +49,8 @@
         };
     </script>
 
+    <script src="http://cdn.callibri.ru/callibri.js" type="text/javascript"></script>
+
     <?if($_REQUEST['print'] == 'Y'){?>
         <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/assets/css/print.css")?>
         <script>
