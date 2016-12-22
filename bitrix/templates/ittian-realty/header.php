@@ -59,6 +59,7 @@
             });
         </script>
     <?}?>
+    <?$isCatalog = CSite::InDir(SITE_DIR.'catalog/');?>
 </head>
 <!--[if IE 9]>     <body class="forie"> <![endif]-->
 <!--[if !IE]><!--> <body>            <!--<![endif]-->
@@ -188,7 +189,13 @@ if($favicon_file != ''){
             ),
             false
         );?>
-        <h1><?$APPLICATION->ShowTitle(false)?></h1>
+        <h1>
+            <?if($isCatalog){?>
+                <?$APPLICATION->ShowProperty('h1')?>
+            <?} else {?>
+                <?$APPLICATION->ShowTitle(false);?>
+            <?}?>
+        </h1>
     </div>
 
     <div class="content">
