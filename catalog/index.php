@@ -75,5 +75,15 @@ $APPLICATION->IncludeComponent(
     ),
     false
 );
-
+$APPLICATION->IncludeComponent(
+    "bitrix:main.include",
+    "",
+    Array(
+        "AREA_FILE_SHOW" => "/include/catalog/inc_seo_description.php",
+        "AREA_FILE_SUFFIX" => "",
+        "AREA_FILE_RECURSIVE" => "",
+        "EDIT_TEMPLATE" => ""
+    ),
+    false
+);
 ?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

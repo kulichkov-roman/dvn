@@ -13,7 +13,6 @@ if($arParams['ITEMS_ONLY'] == 'Y' && count($arResult['ITEMS']) == 0){
     return;
 }
 ?>
-<?//echo '<pre>';print_r($arResult);echo '</pre>';?>
 
 <?if($arParams['ITEMS_ONLY'] != 'Y'){?>
 <div class="sl cat-sl ">
@@ -73,10 +72,12 @@ if($arParams['ITEMS_ONLY'] == 'Y' && count($arResult['ITEMS']) == 0){
 
 <?if($arParams['ITEMS_ONLY'] != 'Y'){?>
     <?=$arResult['NAV_STRING']?>
-
 </div>
 <?}?>
 
+<?if($arResult['DESCRIPTION']){?>
+    <div><?=$arResult['DESCRIPTION'];?></div>
+<?}?>
 
 <?if($arParams['ITEMS_ONLY'] != 'Y'){?>
 <script>

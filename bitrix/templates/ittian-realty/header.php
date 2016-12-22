@@ -176,12 +176,9 @@ if($favicon_file != ''){
             <div class="wrapper">
                 <a class="m-menu"><?=GetMessage('HEADER_REALTY_CATALOG')?><span></span></a>
                 <?$APPLICATION->IncludeFile(SITE_DIR."include/header_realty_menu.php", Array(), Array("MODE"=>"text","SHOW_BORDER"=>false));?>
-
-
             </div>
         </div>
     </header>
-
 <?if(!$isIndex){?>
     <div class="wrapper">
         <?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "main", array(
@@ -191,7 +188,6 @@ if($favicon_file != ''){
             ),
             false
         );?>
-
         <h1><?$APPLICATION->ShowTitle(false)?></h1>
     </div>
 
