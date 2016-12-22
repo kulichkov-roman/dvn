@@ -72,15 +72,6 @@
                 $_SESSION['sort'] = array('field'=>'DATE_ACTIVE_FROM','order'=>'desc','sort'=>'date');
             }
             ?>
-            <div class="row">
-                <label>
-                    Сортировать по
-                    <select id="sort-realty">
-                        <option <?=$_SESSION['sort']['sort']=='date'?'selected="selected"':''?> value="date">Дате</option>
-                        <option <?=$_SESSION['sort']['sort']=='price'?'selected="selected"':''?> value="price">Цене</option>
-                    </select>
-                </label>
-            </div>
             <script>
                 $('#sort-realty').change(function(){
 
