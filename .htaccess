@@ -1,0 +1,80 @@
+Options -Indexes
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+    php_flag allow_call_time_pass_reference 1
+    php_flag session.use_trans_sid off
+    php_flag register_globals off
+    php_flag allow_url_fopen Off
+    php_flag display_errors Off
+    php_value mbstring.func_overload 2
+    php_value display_errors 1
+    php_value mbstring.internal_encoding UTF-8
+    php_value max_input_vars 10000
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+
+  # с www на без www
+  RewriteBase /
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+  RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+  # Добавить слеш на конец
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} ^(.*/[^/\.]+)$
+  RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1/ [R=301,L]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+  RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+
+  # Редиректы
+  Redirect 301 /kommercheskaya http://divnogorskiy.ru/catalog
+  Redirect 301 /kvartiry-v-divnogorskom/12ti-etazhnyj-dom http://divnogorskiy.ru/catalog/vse-planirovki
+  Redirect 301 /kvartiry-v-divnogorskom/12ti-etazhnyj-dom/dvukhkomnatnye http://divnogorskiy.ru/catalog/dvukhkomnatnye
+  Redirect 301 /kvartiry-v-divnogorskom/dvushki-v-divnogorskom http://divnogorskiy.ru/catalog/dvukhkomnatnye
+  Redirect 301 /kvartiry-v-divnogorskom/12ti-etazhnyj-dom/odnokomnatnye http://divnogorskiy.ru/catalog/odnokomnatnye
+  Redirect 301 /kvartiry-v-divnogorskom/odnokomnatnye-divnogorskij http://divnogorskiy.ru/catalog/odnokomnatnye
+  Redirect 301 /kvartiry-v-divnogorskom/12ti-etazhnyj-dom/studii http://divnogorskiy.ru/catalog/kvartiry-studii
+  Redirect 301 /kvartiry-v-divnogorskom/studii-divnogorskij http://divnogorskiy.ru/catalog/kvartiry-studii
+  Redirect 301 /kvartiry-v-divnogorskom/12ti-etazhnyj-dom/trekhkomnatnye http://divnogorskiy.ru/catalog/trekhkomnatnye
+  Redirect 301 /kvartiry-v-divnogorskom/treshki-divnogorskij http://divnogorskiy.ru/catalog/trekhkomnatnye
+  Redirect 301 /kvartiry-v-divnogorskom/vtorichnoe-zhile http://divnogorskiy.ru/catalog/vtorichnoe-zhile
+  Redirect 301 /kvartiry-v-divnogorskom http://divnogorskiy.ru/catalog
+  Redirect 301 /kvartiry-divnogorskij http://divnogorskiy.ru/o-mikrorayone
+  Redirect 301 /pokupatelyam/usloviya-priobreteniya http://divnogorskiy.ru/services/mortgage-lending
+  Redirect 301 /pokupatelyam/aktsii-ot-divnogorskogo http://divnogorskiy.ru/services/akcii
+  Redirect 301 /pokupatelyam http://divnogorskiy.ru/services
+  Redirect 301 /fotogalereya-khoda-stroitelstva-3 http://divnogorskiy.ru/photogallery
+  Redirect 301 /kvartiry-divnogorskij/o-kompanii http://divnogorskiy.ru/about
+  Redirect 301 /trade-in http://divnogorskiy.ru/services/additional-service
+  Redirect 301 /kvartiry-divnogorskij/dokumenty http://divnogorskiy.ru/o-mikrorayone/dokumenty
+  Redirect 301 /news/khod-strojki http://divnogorskiy.ru/o-mikrorayone/khod-stroitelstva
+  Redirect 301 /contact-us http://divnogorskiy.ru/contacts
+  Redirect 301 /news/333-novyj-podarok-zimy http://divnogorskiy.ru/news/domasdani
+  Redirect 301 /pokupatelyam/aktsii-ot-divnogorskogo/44-aktsii/299-molodaya-semya http://divnogorskiy.ru/services/akcii/355
+  Redirect 301 /news/332-pervyj-podarok-zimy http://divnogorskiy.ru/news/present
+  Redirect 301 /pokupatelyam/aktsii-ot-divnogorskogo/44-aktsii/334-kuda-potratit-novyj-god http://divnogorskiy.ru/services/akcii/352
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+  ExpiresByType image/png "access plus 3 day"
+  ExpiresByType text/css "access plus 3 day"
+  ExpiresByType application/javascript "access plus 3 day"  
+</IfModule>
+
