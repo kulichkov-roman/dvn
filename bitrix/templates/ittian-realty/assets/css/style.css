@@ -358,7 +358,7 @@ header .grid-row{
     background: url(../images/time.png) no-repeat;
     background-size: cover;
 }
-.top-b.phone:after {
+.top-b.hd-phone:after {
     content: "";
     width: 17px;
     height: 16px;
@@ -2526,7 +2526,7 @@ h1 {
 	color:#425063;
 	margin:  10px 0 3px;
 }
-.cont-item .time .phone{
+.cont-item .time .hd-phone{
 	font-weight:bold;
 }
 .an-con{

@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /administrator/
+Disallow: /*?
+Disallow: /index.php*
+Disallow: /index2.php*
+Disallow: /bitrix/
+Disallow: /upload/
+Disallow: /search/
+Disallow: /*PAGE_NAME=
+Disallow: /*&print=
+Disallow: /*login=yes
+Disallow: /*logout=yes
+Disallow: /*auth=yes
+Disallow: /*action=
+Disallow: /request/
+
+Host: divnogorskiy.ru
+Sitemap: http://divnogorskiy.ru/sitemap.xml
