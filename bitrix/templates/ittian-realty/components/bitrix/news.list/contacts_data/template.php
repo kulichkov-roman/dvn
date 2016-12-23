@@ -1,12 +1,5 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
 <?$this->setFrameMode(true);?>
-<?
-global $USER;
-if($USER->isAdmin())
-{
-    echo '<pre>';print_r($arResult['ITEMS']);echo '</pre>';
-}
-?>
 <?if(!count($arResult['ITEMS'])) return;?>
 
 <?foreach($arResult['ITEMS'] as $arItem){?>
