@@ -50,6 +50,7 @@
     </script>
 
     <script src="http://cdn.callibri.ru/callibri.js" type="text/javascript"></script>
+    <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=ZwUoxe8DVNMEkUNNDfXpPkMEEKAmYxAoLx1Pyw83iiGiI0M2TSr62zpnn1t5q6SAydyLQJ4m6bvc*e*On89qx6fZcCEfx/vZ7NxgyVqp3PoDehf2tI3JqSL2pPm00Sil7bS7jhdsYV7hN6m8xaQOaYx1RCUtAGHxV9ia4kObfGA-&pixel_id=1000060296';</script>
 
     <?if($_REQUEST['print'] == 'Y'){?>
         <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/assets/css/print.css")?>
