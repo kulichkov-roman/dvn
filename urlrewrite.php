@@ -42,6 +42,12 @@ $arUrlRewrite = array(
 		"ID" => "",
 		"PATH" => "/about/staff/detail.php",
 	),
+	array(
+		"CONDITION" => "#^/o-mikrorayone/khod-stroitelstva/([0-9a-zA-Z\\-_]+)(\\\\?(.*))#",
+		"RULE" => "ELEMENT_CODE=\$1&\$4",
+		"ID" => "",
+		"PATH" => "/o-mikrorayone/khod-stroitelstva/detail.php",
+	),
 );
 
 ?>
