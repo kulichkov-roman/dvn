@@ -16,3 +16,12 @@
 .copy {
     padding: 0!important;
 }
+/*developer link*/
+a.footer__developers-link {
+    color: white!important;
+}
+
+a.footer__developers-link:hover {
+    color: white!important;
+    text-decoration: underline;
+}

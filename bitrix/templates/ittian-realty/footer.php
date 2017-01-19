@@ -44,7 +44,7 @@
             <div class="foot-row">
                 <div class="copy col-lg-8">
                     <?$APPLICATION->IncludeFile(SITE_DIR."include/inc_copyright.php", Array(), Array("MODE"=>"text"));?>
-
+                    Разработка сайта — <a href="http://soft-engineering.pro/" target="_blank" class="footer__developers-link">Engineering.PRO</a>
                     <?if(IsModuleInstalled('ittian.realtypersonal')){?>
                         <div class="personal-enter" style=""><a href="<?=SITE_DIR?>personal/"><?=GetMessage('FOOTER_PERSONAL')?></a></div>
                     <?}?>
