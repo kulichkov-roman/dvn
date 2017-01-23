@@ -17,7 +17,6 @@
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/assets/css/jquery.fancybox.css")?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/assets/css/developers.css")?>
 
-
     <!--[if IE]>
     <link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/assets/css/iefix.css" />
     <![endif]-->
@@ -41,6 +40,17 @@
 
     <?CJSCore::Init(array('ls'))?>
     <?$APPLICATION->ShowHead()?>
+
+    <?
+    $APPLICATION->IncludeComponent('bitrix:main.include', '',
+        Array(
+            'AREA_FILE_SHOW' => 'file',
+            'PATH' => '/local/include/site_templates/hd_ya.php',
+            'EDIT_TEMPLATE' => ''
+        ),
+        false
+    );
+    ?>
 
     <script>
         var SiteOptions = {
