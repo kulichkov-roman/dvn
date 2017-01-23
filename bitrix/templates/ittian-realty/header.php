@@ -4,7 +4,7 @@
 <!doctype html>
 <html>
 <head>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+ <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 
     <title><?$APPLICATION->ShowTitle()?></title>
@@ -50,7 +50,6 @@
     </script>
 
     <script src="http://cdn.callibri.ru/callibri.js" type="text/javascript"></script>
-    <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=ZwUoxe8DVNMEkUNNDfXpPkMEEKAmYxAoLx1Pyw83iiGiI0M2TSr62zpnn1t5q6SAydyLQJ4m6bvc*e*On89qx6fZcCEfx/vZ7NxgyVqp3PoDehf2tI3JqSL2pPm00Sil7bS7jhdsYV7hN6m8xaQOaYx1RCUtAGHxV9ia4kObfGA-&pixel_id=1000060296';</script>
 
     <?if($_REQUEST['print'] == 'Y'){?>
         <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/assets/css/print.css")?>
@@ -61,6 +60,32 @@
         </script>
     <?}?>
     <?$isCatalog = CSite::InDir(SITE_DIR.'catalog/');?>
+
+	
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PWJXWPJ');</script>
+<!-- End Google Tag Manager --> 
+	
+<!— Facebook Pixel Code —>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1221473367916622'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1221473367916622&e.."
+/></noscript>
+<!— DO NOT MODIFY —>
+<!— End Facebook Pixel Code —>
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=ZwUoxe8DVNMEkUNNDfXpPkMEEKAmYxAoLx1Pyw83iiGiI0M2TSr62zpnn1t5q6SAydyLQJ4m6bvc*e*On89qx6fZcCEfx/vZ7NxgyVqp3PoDehf2tI3JqSL2pPm00Sil7bS7jhdsYV7hN6m8xaQOaYx1RCUtAGHxV9ia4kObfGA-&pixel_id=1000060296';</script>
 </head>
 <!--[if IE 9]>     <body class="forie"> <![endif]-->
 <!--[if !IE]><!--> <body>            <!--<![endif]-->
@@ -87,6 +112,12 @@ if($favicon_file != ''){
     $APPLICATION->AddHeadString('<link rel="shortcut icon" href="'.$favicon_file.'" type="image/x-icon" />');
 }
 ?>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWJXWPJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <div class="main">
 <div class="fix-dop">
 	<div class="top-head" id="tov">
