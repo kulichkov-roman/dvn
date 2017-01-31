@@ -61,6 +61,15 @@
         </div>
     </div>
 </footer>
-
+<?
+$APPLICATION->IncludeComponent('bitrix:main.include', '',
+    Array(
+        'AREA_FILE_SHOW' => 'file',
+        'PATH' => '/local/include/site_templates/hd_traffgui.php',
+        'EDIT_TEMPLATE' => ''
+    ),
+    false
+);
+?>
 </body>
 </html>

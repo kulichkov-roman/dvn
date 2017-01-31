@@ -50,6 +50,14 @@
         ),
         false
     );
+    $APPLICATION->IncludeComponent('bitrix:main.include', '',
+        Array(
+            'AREA_FILE_SHOW' => 'file',
+            'PATH' => '/local/include/site_templates/hd_socfishing.php',
+            'EDIT_TEMPLATE' => ''
+        ),
+        false
+    );
     ?>
 
     <script>
