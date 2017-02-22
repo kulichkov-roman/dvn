@@ -65,14 +65,6 @@
 $APPLICATION->IncludeComponent('bitrix:main.include', '',
     Array(
         'AREA_FILE_SHOW' => 'file',
-        'PATH' => '/local/include/site_templates/ft_traffgui.php',
-        'EDIT_TEMPLATE' => ''
-    ),
-    false
-);
-$APPLICATION->IncludeComponent('bitrix:main.include', '',
-    Array(
-        'AREA_FILE_SHOW' => 'file',
         'PATH' => '/local/include/site_templates/ft_roistat.php',
         'EDIT_TEMPLATE' => ''
     ),
