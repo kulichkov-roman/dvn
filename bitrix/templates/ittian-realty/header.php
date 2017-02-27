@@ -6,6 +6,7 @@
 <head>
  <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="yandex-verification" content="9068706285bb97b1" />
 
     <title><?$APPLICATION->ShowTitle()?></title>
 
